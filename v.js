@@ -8,7 +8,8 @@ function dangky(){
                             var nutchitiet = null;
     for(var j in caclop){
            for(let j = 0; j < caclop.length; j++){
-                nutchitiet = hang.querySelector("button"); 
+                var hang = caclop[j];
+nutchitiet = hang.querySelector("button");
                 break;
             }
         }
