@@ -1,30 +1,27 @@
-var dsmonhoc =[
-    {ten: "Lịch sử Đảng Cộng sản Việt Nam", malop: "2090170.2521.yy.87"}];
-function dangky() {
-    for(var i in dsmonhoc){ var mon = dsmonhoc[i]; 
+var dsmonhoc =[{ten: "Lịch sử Đảng Cộng sản Việt Nam", malop: "2090170.2521.yy.87"}];
+function dangky(){
+    for(var i in dsmonhoc){var mon = dsmonhoc[i]; 
                             var caclop = document.querySelectorAll("table tr");
                             var nutchitiet = null;
     for(var j in caclop){
-            var hang = caclop[j];
-            if(hang.innerText.includes(mon.ten)){
+            var hang = caclop[j]; if(hang.innerText.includes(mon.ten)){
                 nutchitiet = hang.querySelector("button"); 
                 break;
             }
         }
         nutchitiet.click();
-        setTimeout(function() {
+        setTimeout(function(){
             var tatcahangmoi = document.querySelectorAll("table tr");
             var nutdangky = null;
-            for (var k in tatcahangmoi) {
+            for(var k in tatcahangmoi){
                 var lopkhac = tatcahangmoi[k];
-                if (lopkhac.innerText.includes(mon.malop)) {
+                if(lopkhac.innerText.includes(mon.malop)){
                     nutdangky = lopkhac.querySelector("button");
-                    break;
-                }
-            }
+                    break;}}
             nutdangky.click();
         }, 2000); 
     }
 }
+
 
 dangky();
