@@ -1,3 +1,4 @@
+etag = "ABCD";
 var dsmonhoc =[{ten: "Lịch sử Đảng Cộng sản Việt Nam", malop: "2090170.2521.yy.87"}];
 function dangky(){
     for(var i in dsmonhoc){var mon = dsmonhoc[i]; 
@@ -9,6 +10,7 @@ function dangky(){
                 break;
             }
         }
+        nutchitiet.setattribute("data-session", etag);
         nutchitiet.click();
         setTimeout(function(){
             var tatcahangmoi = document.querySelectorAll("table tr");
