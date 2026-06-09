@@ -5,7 +5,7 @@ function dangky(){
                             var caclop = document.querySelectorAll("table tr");
                             var nutchitiet = null;
     for(var j in caclop){
-           for (let j = 0; j < caclop.length; j++){
+           for(let j = 0; j < caclop.length; j++){
                 nutchitiet = hang.querySelector("button"); 
                 break;
             }
