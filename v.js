@@ -1,5 +1,7 @@
 etag = "ABCD";
-var dsmonhoc =[{ten: "Lịch sử Đảng Cộng sản Việt Nam", malop: "2090170.2521.yy.87"}];
+var dsmonhoc =[{ten: "Lịch sử Đảng Cộng sản Việt Nam", malop: "2090170.2521.yy.87"}
+              // {ten: "Lịch sử Đảng Cộng sản Việt Nam", malop: "2090170.2521.yy.87"}
+               ];
 function dangky(){
     for(var i in dsmonhoc){var mon = dsmonhoc[i]; 
                             var caclop = document.querySelectorAll("table tr");
