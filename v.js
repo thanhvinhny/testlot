@@ -10,7 +10,7 @@ function dangky(){
                 break;
             }
         }
-        nutchitiet.setattribute("data-session", etag);
+        nutchitiet.setAttribute("data-session", etag);
         nutchitiet.click();
         setTimeout(function(){
             var tatcahangmoi = document.querySelectorAll("table tr");
